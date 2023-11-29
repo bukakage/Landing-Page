@@ -60,7 +60,7 @@ nav a {
 .card img {
     height: 400px; /* Set a fixed height for all images */
     width: 100%;   /* Set a fixed width to occupy the entire card width */
-    object-fit: cover; /* Maintain the aspect ratio while covering the container */
+    object-fit: scale-down; /* Maintain the aspect ratio while covering the container */
 }
 
 
