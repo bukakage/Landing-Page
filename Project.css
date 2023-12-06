@@ -1,3 +1,5 @@
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -66,7 +68,21 @@ nav a {
     border-radius: 25px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+  }
 
+  /* Optional: Remove any other default styles */
+  a:hover, a:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Optional: Make the cursor the same as the surrounding text */
+  a {
+    cursor: inherit;
+  }
 footer {
     background-color: #171717;
     color: #8f8f8f;
