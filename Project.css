@@ -5,10 +5,11 @@ body {
     justify-content: space-between;
     height: 100vh;
     margin: 0;
+    background-color: #171717;
 }
 
 header {
-    background-color: #171717;
+    background-color: #0e0e0e;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -43,6 +44,7 @@ nav a {
     margin: 20px auto;
     text-align: center;
     flex-wrap: wrap;
+    /* padding-top: 34vh; */
 }
 
 .card {
@@ -58,7 +60,7 @@ nav a {
 
 
 .card img {
-    height: 400px; /* Set a fixed height for all images */
+    height: 200px; /* Set a fixed height for all images */
     width: 100%;   /* Set a fixed width to occupy the entire card width */
     object-fit: scale-down; /* Maintain the aspect ratio while covering the container */
     border-radius: 25px;
@@ -67,7 +69,7 @@ nav a {
 
 footer {
     background-color: #171717;
-    color: #fff;
+    color: #8f8f8f;
     padding: 20px;
     text-align: center;
     width: 100%;
