@@ -21,7 +21,7 @@
         </ul>
       </nav>
     </header>
-
+    <div id="cards">
     <main class="main-content">
       <div class="card">
 
@@ -192,7 +192,7 @@
         </p>
       </div>
     </main>
-
+  </div>
 
     <footer>
       <p>&copy; <span id="year"></span> Made for Odin Project &hearts;</p>
@@ -200,5 +200,17 @@
   </body>
   <script>
     document.getElementById("year").innerHTML = (new Date().getFullYear());
+
+    document.getElementById("cards").onmousemove = e => {
+    for(const card of document.getElementsByClassName("card")) {
+      const rect = card.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+  
+      card.style.setProperty("--mouse-x", `${x}px`);
+      card.style.setProperty("--mouse-y", `${y}px`);
+    };
+  }
+
   </script>
 </html>
