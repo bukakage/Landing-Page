@@ -201,6 +201,17 @@
   <script>
     document.getElementById("year").innerHTML = (new Date().getFullYear());
 
+    document.getElementById("cards").addEventListener("click", handleCardClick);
+    function handleCardClick(e) {
+  const clickedCard = e.target.closest(".card");
+  if (clickedCard) {
+    const link = clickedCard.querySelector("a");
+    if (link) {
+      window.location.href = link.href;
+     }
+    }
+  }
+
     document.getElementById("cards").onmousemove = e => {
     for(const card of document.getElementsByClassName("card")) {
       const rect = card.getBoundingClientRect(),
