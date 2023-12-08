@@ -1,0 +1,62 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  section {
+    margin: 20px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+  }
+  
+  .welcome-text, .menu-item, address {
+    color: #fff;
+  }
+  
+  .menu-item {
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
+  }
+  
+  #contact {
+    color: #fff;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
