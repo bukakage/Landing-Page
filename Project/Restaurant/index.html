@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant Website</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>Our Restaurant</h1>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <h1>Restaurant Name</h1>
 </header>
 
-<section id="home">
-  <div class="hero-image">
-    <!-- Placeholder image -->
-    <img src="https://via.placeholder.com/1200x400" alt="Restaurant Interior">
-  </div>
-  <div class="welcome-text">
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
     <h2>Welcome to Our Restaurant</h2>
-    <p>Experience the finest dining in a cozy atmosphere.</p>
-  </div>
-</section>
-
-<section id="menu">
-  <h2>Our Menu</h2>
-  <div class="menu-item">
-    <img src="https://via.placeholder.com/200" alt="Dish 1">
-    <h3>Dish 1</h3>
-    <p>Description of Dish 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </div>
-  <div class="menu-item">
-    <img src="https://via.placeholder.com/200" alt="Dish 2">
-    <h3>Dish 2</h3>
-    <p>Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </div>
-  <!-- Add more menu items as needed -->
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Visit us at:</p>
-  <address>
-    123 Restaurant Street<br>
-    Cityville, State 12345<br>
-    Phone: (555) 123-4567
-  </address>
+    <p>Discover the finest flavors, the freshest ingredients, and the most mouthwatering dishes at our restaurant.</p>
+    <img src="restaurant_image.jpg" alt="Restaurant Image">
 </section>
 
 <footer>
-  <p>&copy; <span id="year"></span> Our Restaurant</p>
+    <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
