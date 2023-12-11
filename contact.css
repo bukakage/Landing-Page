@@ -1,11 +1,11 @@
 :root {  
-    --purple: #0b090a;
+    --purple: #171717;
     --violet: #950306;
     --pink: #202930;
   }
   
  .magic-effect{
-    padding: 23em 0;
+    padding: 18em 0;
  } 
 
 @keyframes background-pan {
