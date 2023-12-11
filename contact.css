@@ -4,6 +4,10 @@
     --pink: #202930;
   }
   
+ .magic-effect{
+    padding: 23em 0;
+ } 
+
 @keyframes background-pan {
     from {
       background-position: 0% center;
