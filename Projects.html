@@ -210,7 +210,8 @@
   if (clickedCard) {
     const link = clickedCard.querySelector("a");
     if (link) {
-      window.location.href = link.href;
+      // window.location.href = link.href ;
+      window.open(link.href, '_blank');
      }
     }
   }
