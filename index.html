@@ -5,23 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      nav {
+        position: relative;
+      }
+
+      nav a span {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        z-index: 1;
+      }
+
+      nav a:hover span {
+        display: block;
+      }
+
+      /* Add styles for dropdown */
+      nav ul ul {
+        display: none;
+        position: absolute;
+        padding: 10px;
+        list-style: none;
+        z-index: 1;
+        top: 100%; /* Position the dropdown below the parent */
+        left: 0; /* Align with the left edge of the parent */
+        width: 100%; /* Make the dropdown full width */
+      }
+
+      nav ul li:hover > ul {
+        display: block;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <h1>Landing Page</h1>
       <nav>
-        <ul>
+        <ul id="navbar">
           <li><a href="index.html">Home</a></li>
-          <li><a href="architecture.html">Software architecture</a></li>
-          <li><a href="Projects.html">Projects</a></li>
-          <li><a href="contact.html">Collaboration</a></li>
+          <li>
+            <a href="architecture.html"
+              >Software architecture
+             
+            </a>
+          </li>
+          <!-- <li><a href="Projects.html">Projects</a></li> -->
+          <li>
+            <a href="Projects.html">Projects</a>
+            <ul>
+              <li><a href="project1.html">Offical Project</a></li>
+              <li><a href="Projects.html">Leisure Project</a></li>
+              <!-- Add more project links as needed -->
+            </ul>
+          </li>
+          <li><a class="tooltip" href="contact.html">Collaboration <span>
+            4 eyes is better than 2 :D
+          </span></a></li>
           <li><a href="https://dev.to/codingwithb" target="_blank">Blog</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="cover-image"> </div>
-    
+    <div class="cover-image"></div>
+
     <main class="main-content">
       <div class="card">
         <img src="images/1.jpg" alt="Project 1" />
@@ -61,7 +111,20 @@
     </footer>
   </body>
   <script>
-    document.getElementById("year").innerHTML = (new Date().getFullYear());
+    const projectsNavItem = document.getElementById('projects');
+    const dropdownMenu = document.getElementById('dropdown-menu');
     
+    projectsNavItem.addEventListener('mouseleave', function() {
+      dropdownMenu.style.display = 'none';
+    });
+    
+    dropdownMenu.addEventListener('mouseenter', function() {
+      dropdownMenu.style.display = 'block';
+    });
+    
+    dropdownMenu.addEventListener('mouseleave', function() {
+      dropdownMenu.style.display = 'none';
+    });
+    document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
 </html>

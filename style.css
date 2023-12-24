@@ -89,6 +89,22 @@ nav a {
     text-underline-position: none;
     text-decoration: none;
 }
+
+nav a span {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  nav a:hover span {
+    display: block;
+    top: 100%; /* Position the dropdown below the parent */
+    left: 0; /* Align with the left edge of the parent */
+    width: 100%; /* Make the dropdown full width */
+  }
 footer {
     background-color: #171717;
     color: #8f8f8f;
